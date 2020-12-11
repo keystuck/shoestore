@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/text_shoe_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/shoe_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/text_shoe_name"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@id/text_shoe_name_label"
+        app:layout_constraintTop_toTopOf="@id/text_shoe_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_shoe_company_label"
+        app:layout_constraintTop_toBottomOf="@id/text_shoe_name_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/company"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/text_shoe_company"
+        app:layout_constraintStart_toEndOf="@id/text_shoe_company_label"
+        app:layout_constraintTop_toTopOf="@id/text_shoe_company_label"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_shoe_size_label"
+        app:layout_constraintTop_toBottomOf="@id/text_shoe_company_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/size"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/text_shoe_size"
+        app:layout_constraintStart_toEndOf="@id/text_shoe_size_label"
+        app:layout_constraintTop_toTopOf="@id/text_shoe_size_label"
+        android:inputType="numberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_shoe_desc_label"
+        app:layout_constraintTop_toBottomOf="@id/text_shoe_size_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/desc"
+        android:textAppearance="?attr/textAppearanceListItem" />
+    <TextView
+        android:id="@+id/text_shoe_desc"
+        app:layout_constraintStart_toEndOf="@id/text_shoe_desc_label"
+        app:layout_constraintTop_toTopOf="@id/text_shoe_desc_label"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

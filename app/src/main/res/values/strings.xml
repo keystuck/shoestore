@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+
+    <string name="email_label">Email Address:</string>
+    <string name="password_label">Password:</string>
+    <string name="existing_user">Existing User</string>
+    <string name="new_login">New Login</string>
+    <string name="welcome">Welcome to the Shoe Store</string>
+    <string name="subhead">The Store for Shoes</string>
+    <string name="instr_btn_label">Instructions For Use</string>
+    <string name="instr_text_label">Instructions</string>
+    <string name="instructions">You do the thing and the thing gets done. Possibly in some cases
+    you may need to do the thing more than once, but only if you want more than one of the thing.
+    You know.</string>
+    <string name="to_shoes_btn_label">Click to go to shoes!</string>
+    <string name="submit">Click to add shoe</string>
+
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company">Company</string>
+    <string name="size">Size</string>
+    <string name="desc">Description</string>
+
+    <string name="save">Add Shoe to List</string>
+    <string name="cancel">Cancel</string>
+</resources>
