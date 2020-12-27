@@ -7,15 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
-import com.udacity.shoestore.R
-import com.udacity.shoestore.databinding.FragmentInstructionBinding
+import com.example.shoestore.R
+import com.example.shoestore.databinding.FragmentInstructionBinding
 
 
-/**
- * A simple [Fragment] subclass.
- * Use the [InstructionFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class InstructionFragment : Fragment() {
 
 

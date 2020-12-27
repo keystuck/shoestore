@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_shoesFragment_to_newShoeFragment"
             app:destination="@id/newShoeFragment" />
+        <action
+            android:id="@+id/action_shoesFragment_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
     </fragment>
     <fragment
         android:id="@+id/newShoeFragment"
@@ -44,6 +47,8 @@
         tools:layout="@layout/fragment_new_shoe" >
         <action
             android:id="@+id/action_newShoeFragment_to_shoesFragment"
-            app:destination="@id/shoesFragment" />
+            app:destination="@id/shoesFragment"
+            app:popUpTo="@id/instructionFragment"
+            app:popUpToInclusive="false" />
     </fragment>
 </navigation>

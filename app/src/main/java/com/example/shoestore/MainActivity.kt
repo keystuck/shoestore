@@ -1,26 +1,35 @@
-package com.udacity.shoestore
+package com.example.shoestore
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
-import com.example.shoestore.ShoeViewModel
-import com.udacity.shoestore.databinding.ActivityMainBinding
+import androidx.lifecycle.LifecycleOwner
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
+import com.example.shoestore.databinding.ActivityMainBinding
+
 import timber.log.Timber
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity()  {
 
-    private lateinit var viewModel: ShoeViewModel
     private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ShoeViewModel::class.java)
+        val viewModel: ShoeViewModel by viewModels()
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         binding.shoeViewModel = viewModel
 
+        val navController = this.findNavController(R.id.myNavHostFragment)
+        NavigationUI.setupActionBarWithNavController(this, navController)
 
         Timber.plant(Timber.DebugTree())
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = this.findNavController(R.id.myNavHostFragment)
+        return navController.navigateUp()
     }
 }

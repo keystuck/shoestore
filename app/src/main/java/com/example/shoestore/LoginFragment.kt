@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
-import com.udacity.shoestore.R
-import com.udacity.shoestore.databinding.FragmentLoginBinding
+import com.example.shoestore.R
+import com.example.shoestore.databinding.FragmentLoginBinding
 
 
 class LoginFragment : Fragment() {

@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:text="@string/subhead"
             app:layout_constraintStart_toStartOf="parent"
+            android:textSize="32sp"
             app:layout_constraintTop_toBottomOf="@id/text_welcome" />
 
         <Button

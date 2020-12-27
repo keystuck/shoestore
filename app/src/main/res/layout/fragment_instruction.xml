@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:textSize="36sp"
  />
 
         <TextView
@@ -21,7 +22,8 @@
             android:layout_height="wrap_content"
             android:text="@string/instructions"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text_instructions_label" />
+            app:layout_constraintTop_toBottomOf="@id/text_instructions_label"
+            android:textSize="24sp"/>
 
         <Button
             android:id="@+id/btn_to_shoes"
