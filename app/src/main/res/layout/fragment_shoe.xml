@@ -2,6 +2,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" >
+
+    <!--ConstraintLayout chosen here because there are a lot
+    of fields of varying width and the defaults of LinearLayout
+    would result in a less clear presentation -->
+
+
     <data>
         <variable
             name="shoe"

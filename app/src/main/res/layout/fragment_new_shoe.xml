@@ -2,6 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.shoestore.NewShoeFragment">
 
+<!-- LinearLayout used here because the layout is very simple -
+the only requirements are along vertical and horizontal lines -->
+
     <LinearLayout
         android:layout_marginTop="100dp"
         android:layout_width="match_parent"
