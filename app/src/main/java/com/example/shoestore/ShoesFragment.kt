@@ -1,7 +1,6 @@
 package com.example.shoestore
 
 import android.os.Bundle
-import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
@@ -13,6 +12,7 @@ import androidx.navigation.ui.NavigationUI
 import com.example.shoestore.databinding.FragmentShoeBinding
 import com.example.shoestore.databinding.FragmentShoeListBinding
 import com.example.shoestore.models.Shoe
+import com.example.shoestore.models.ShoeListViewModel
 import kotlinx.android.synthetic.main.fragment_shoe_list.view.*
 
 
@@ -22,7 +22,7 @@ class ShoesFragment : Fragment() {
 
     )
 
-    private val shoeModel: ShoeViewModel by activityViewModels()
+    private val shoeListModel: ShoeListViewModel by activityViewModels()
 
     private lateinit var binding: FragmentShoeListBinding
 
@@ -32,7 +32,7 @@ class ShoesFragment : Fragment() {
        binding = DataBindingUtil.inflate(
            inflater, R.layout.fragment_shoe_list, container, false
        )
-        binding.shoeViewModel = shoeModel
+        binding.shoeViewModel = shoeListModel
 
         binding.fabNewShoe.setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.action_shoesFragment_to_newShoeFragment)
@@ -56,7 +56,7 @@ class ShoesFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        shoeModel.shoes.observe(viewLifecycleOwner, Observer { newList ->
+        shoeListModel.shoes.observe(viewLifecycleOwner, Observer { newList ->
             shoesList = newList.toList()
             for (shoe in shoesList){
 

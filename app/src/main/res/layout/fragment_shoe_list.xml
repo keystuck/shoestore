@@ -10,7 +10,7 @@
     <data>
         <variable
             name="shoeViewModel"
-            type="com.example.shoestore.ShoeViewModel" />
+            type="com.example.shoestore.models.ShoeListViewModel" />
         <variable
             name="shoe"
             type="com.example.shoestore.models.Shoe" />
